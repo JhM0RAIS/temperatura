@@ -1,3 +1,5 @@
+let temperatura = 0
 input.onButtonPressed(Button.A, function () {
-    basic.showNumber(input.temperature())
+    temperatura = input.temperature()
+    basic.showString("" + temperatura + "C")
 })
